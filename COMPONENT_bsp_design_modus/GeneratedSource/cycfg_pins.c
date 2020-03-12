@@ -4,8 +4,7 @@
 * Description:
 * Pin configuration
 * This file was automatically generated and should not be modified.
-* Device Configurator: 2.0.0.1332
-* Device Support Library (../../../baselib/20719B2): 2.0.0.2029
+* cfg-backend-cli: 1.2.0.1483
 *
 ********************************************************************************
 * Copyright 2017-2019 Cypress Semiconductor Corporation
@@ -73,21 +72,21 @@
 const wiced_platform_gpio_t platform_gpio_pins[] =
 {
 	[PLATFORM_GPIO_0] = {WICED_P00, WICED_GPIO},
-	[PLATFORM_GPIO_1] = {WICED_P01, spi_1_miso_0_TRIGGER_IN},
+	[PLATFORM_GPIO_1] = {WICED_P01, WICED_SPI_1_MISO},
 	[PLATFORM_GPIO_2] = {WICED_P02, WICED_GPIO},
 	[PLATFORM_GPIO_3] = {WICED_P04, WICED_GPIO},
-	[PLATFORM_GPIO_4] = {WICED_P06, spi_1_mosi_0_TRIGGER_IN},
-	[PLATFORM_GPIO_5] = {WICED_P07, spi_1_cs_0_TRIGGER_IN},
-	[PLATFORM_GPIO_6] = {WICED_P10, adc_0_channel_0_TRIGGER_IN},
+	[PLATFORM_GPIO_4] = {WICED_P06, WICED_SPI_1_SLAVE_READY},
+	[PLATFORM_GPIO_5] = {WICED_P07, WICED_SPI_1_CS},
+	[PLATFORM_GPIO_6] = {WICED_P10, WICED_GPIO},
 	[PLATFORM_GPIO_7] = {WICED_P16, WICED_GPIO},
 	[PLATFORM_GPIO_8] = {WICED_P17, WICED_GPIO},
 	[PLATFORM_GPIO_9] = {WICED_P25, i2c_0_scl_0_TRIGGER_IN},
 	[PLATFORM_GPIO_10] = {WICED_P26, WICED_GPIO},
-	[PLATFORM_GPIO_11] = {WICED_P28, WICED_GPIO},
+	[PLATFORM_GPIO_11] = {WICED_P28, WICED_SPI_1_MOSI},
 	[PLATFORM_GPIO_12] = {WICED_P29, i2c_0_sda_0_TRIGGER_IN},
 	[PLATFORM_GPIO_13] = {WICED_P33, uart_1_txd_0_TRIGGER_IN},
 	[PLATFORM_GPIO_14] = {WICED_P34, uart_1_rxd_0_TRIGGER_IN},
-	[PLATFORM_GPIO_15] = {WICED_P38, spi_1_clk_0_TRIGGER_IN},
+	[PLATFORM_GPIO_15] = {WICED_P38, WICED_SPI_1_CLK},
 };
 const size_t platform_gpio_pin_count = (sizeof(platform_gpio_pins) / sizeof(wiced_platform_gpio_t));
 const wiced_platform_led_config_t platform_led[] =

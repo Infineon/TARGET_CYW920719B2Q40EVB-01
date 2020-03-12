@@ -5,8 +5,7 @@
 * Contains warnings and errors that occurred while generating code for the
 * design.
 * This file was automatically generated and should not be modified.
-* Device Configurator: 2.0.0.1332
-* Device Support Library (../../../baselib/20719B2): 2.0.0.2029
+* cfg-backend-cli: 1.2.0.1483
 *
 ********************************************************************************
 * Copyright 2017-2019 Cypress Semiconductor Corporation
