@@ -4,10 +4,13 @@
 * Description:
 * Establishes all necessary connections between hardware elements.
 * This file was automatically generated and should not be modified.
-* cfg-backend-cli: 1.2.0.1483
+* Tools Package 2.1.0.1266
+* 20719B2
+* personalities 1.0.0.31
+* udd 1.2.0.128
 *
 ********************************************************************************
-* Copyright 2017-2019 Cypress Semiconductor Corporation
+* Copyright 2020 Cypress Semiconductor Corporation
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +34,7 @@ extern "C" {
 #endif
 
 #include "cycfg_notices.h"
-void init_cycfg_routing(void);
+static inline void init_cycfg_routing(void) {}
 #define init_cycfg_connectivity() init_cycfg_routing()
 #define ioss_0_pin_10_AUX UNKNOWN
 #define ioss_0_pin_1_AUX UNKNOWN
@@ -40,7 +43,7 @@ void init_cycfg_routing(void);
 #define ioss_0_pin_33_AUX UNKNOWN
 #define ioss_0_pin_34_AUX UNKNOWN
 #define ioss_0_pin_38_AUX UNKNOWN
-#define ioss_0_pin_6_AUX UNKNOWN
+#define ioss_0_pin_4_AUX UNKNOWN
 #define ioss_0_pin_7_AUX UNKNOWN
 
 #define CYBSP_A0_aux_0_TRIGGER_OUT ADC_INPUT_P10
@@ -48,10 +51,10 @@ void init_cycfg_routing(void);
 #define adc_0_channel_0_TRIGGER_IN WICED_GPIO
 #define i2c_0_scl_0_TRIGGER_IN WICED_I2C_1_SCL
 #define i2c_0_sda_0_TRIGGER_IN WICED_I2C_1_SDA
-#define spi_1_clk_0_TRIGGER_IN WICED_SPI_2_CLK
-#define spi_1_cs_0_TRIGGER_IN WICED_SPI_2_CS
-#define spi_1_miso_0_TRIGGER_IN WICED_SPI_2_MISO
-#define spi_1_mosi_0_TRIGGER_IN WICED_SPI_2_MOSI
+#define spi_0_clk_0_TRIGGER_IN WICED_SPI_1_CLK
+#define spi_0_cs_0_TRIGGER_IN WICED_SPI_1_CS
+#define spi_0_miso_0_TRIGGER_IN WICED_SPI_1_MISO
+#define spi_0_mosi_0_TRIGGER_IN WICED_SPI_1_MOSI
 #define uart_1_rxd_0_TRIGGER_IN WICED_UART_2_RXD
 #define uart_1_txd_0_TRIGGER_IN WICED_UART_2_TXD
 

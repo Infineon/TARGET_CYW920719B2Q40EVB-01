@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="1.0.0"/>
+    <ToolInfo version="2.1.0.1266"/>
     <Devices>
         <Device mpn="CYW20719B2KUMLG">
             <BlockConfig>
@@ -187,7 +187,7 @@
                 <Block location="ioss[0].pin[4]">
                     <Alias value="CYBSP_D7"/>
                     <Personality template="20x19_pin" version="1.0">
-                        <Param id="Type" value="GPIO"/>
+                        <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="2"/>
                         <Param id="DefaultState" value="GPIO_PIN_OUTPUT_LOW"/>
                         <Param id="Control" value="GPIO_INPUT_ENABLE"/>
@@ -203,6 +203,7 @@
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="0"/>
                         <Param id="DefaultState" value="GPIO_PIN_OUTPUT_LOW"/>
+                        <Param id="PressedValue" value="GPIO_PIN_OUTPUT_LOW"/>
                         <Param id="Control" value="GPIO_INPUT_ENABLE"/>
                         <Param id="PullMode" value="GPIO_PULL_UP_DOWN_NONE"/>
                         <Param id="InterruptEnable" value="false"/>
@@ -222,7 +223,7 @@
                         <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
                     </Personality>
                 </Block>
-                <Block location="spi[1]">
+                <Block location="spi[0]">
                     <Personality template="20x19_spi" version="1.0"/>
                 </Block>
                 <Block location="uart[1]">
@@ -244,15 +245,15 @@
                 </Net>
                 <Net>
                     <Port name="ioss[0].pin[1].aux[0]"/>
-                    <Port name="spi[1].miso[0]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].pin[6].aux[0]"/>
-                    <Port name="spi[1].mosi[0]"/>
+                    <Port name="spi[0].miso[0]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].pin[7].aux[0]"/>
-                    <Port name="spi[1].cs[0]"/>
+                    <Port name="spi[0].cs[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].pin[4].aux[0]"/>
+                    <Port name="spi[0].mosi[0]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].pin[33].aux[0]"/>
@@ -264,13 +265,10 @@
                 </Net>
                 <Net>
                     <Port name="ioss[0].pin[38].aux[0]"/>
-                    <Port name="spi[1].clk[0]"/>
+                    <Port name="spi[0].clk[0]"/>
                 </Net>
             </Netlist>
         </Device>
     </Devices>
-    <Libraries>
-        <Library name="bt_sdk" version="1.1"/>
-    </Libraries>
     <ConfiguratorData/>
 </Design>

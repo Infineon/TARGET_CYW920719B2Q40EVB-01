@@ -4,10 +4,13 @@
 * Description:
 * Pin configuration
 * This file was automatically generated and should not be modified.
-* cfg-backend-cli: 1.2.0.1483
+* Tools Package 2.1.0.1266
+* 20719B2
+* personalities 1.0.0.31
+* udd 1.2.0.128
 *
 ********************************************************************************
-* Copyright 2017-2019 Cypress Semiconductor Corporation
+* Copyright 2020 Cypress Semiconductor Corporation
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -95,7 +98,7 @@ extern "C" {
 #define SPI2_CS_ENABLED CYBSP_D10_ENABLED
 #define CYBSP_D10 WICED_P07
 #define SPI2_CS CYBSP_D10
-#define spi_1_ENABLED 1U
+#define spi_0_ENABLED 1U
 #define uart_1_ENABLED 1U
 
 extern const wiced_platform_gpio_t platform_gpio_pins[];
