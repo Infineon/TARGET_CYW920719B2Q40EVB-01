@@ -22,6 +22,7 @@
                     <Alias value="CYBSP_D2"/>
                     <Alias value="CYBSP_D4"/>
                     <Alias value="SW3"/>
+                    <Alias value="USER_BUTTON1"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="BUTTON"/>
                         <Param id="Index" value="1"/>
@@ -72,7 +73,7 @@
                 </Block>
                 <Block location="ioss[0].pin[1]">
                     <Alias value="CYBSP_D12"/>
-                    <Alias value="SPI2_MISO"/>
+                    <Alias value="SPI1_MISO"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="0"/>
@@ -173,7 +174,7 @@
                 </Block>
                 <Block location="ioss[0].pin[38]">
                     <Alias value="CYBSP_D13"/>
-                    <Alias value="SPI2_CLK"/>
+                    <Alias value="SPI1_CLK"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="0"/>
@@ -198,7 +199,7 @@
                 </Block>
                 <Block location="ioss[0].pin[6]">
                     <Alias value="CYBSP_D8"/>
-                    <Alias value="SPI2_MOSI"/>
+                    <Alias value="SPI1_MOSI"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="0"/>
@@ -212,7 +213,7 @@
                 </Block>
                 <Block location="ioss[0].pin[7]">
                     <Alias value="CYBSP_D10"/>
-                    <Alias value="SPI2_CS"/>
+                    <Alias value="SPI1_CS"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="0"/>
@@ -248,12 +249,12 @@
                     <Port name="spi[0].miso[0]"/>
                 </Net>
                 <Net>
-                    <Port name="ioss[0].pin[7].aux[0]"/>
-                    <Port name="spi[0].cs[0]"/>
-                </Net>
-                <Net>
                     <Port name="ioss[0].pin[4].aux[0]"/>
                     <Port name="spi[0].mosi[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].pin[7].aux[0]"/>
+                    <Port name="spi[0].cs[0]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].pin[33].aux[0]"/>
