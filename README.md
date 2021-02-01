@@ -2,9 +2,9 @@
 
 ### Overview
 
-The Cypress CYW920719B2Q40EVB-01 Evaluation Kit enables you to evaluate and develop single-chip Bluetooth applications using the CYW20719, an ultra-low-power dual-mode Bluetooth 5.0 wireless MCU device. The CYW20719 is a stand-alone baseband processor with an integrated 2.4 GHz transceiver supporting BR/EDR/BLE. The CYW20719 employs high integration to reduce external components, thereby minimizing the devices's footprint and cost. This kit helps evaluate device functionality and develop applications quickly for faster time-to-market.
+The Cypress CYW920719B2Q40EVB-01 Evaluation Kit enables you to evaluate and develop single-chip Bluetooth applications using the CYW20719, an ultra-low-power dual-mode Bluetooth 5.1 wireless MCU device. The CYW20719 is a stand-alone baseband processor with an integrated 2.4 GHz transceiver supporting Bluetooth LE/BR/EDR. The CYW20719 employs high integration to reduce external components, thereby minimizing the devices's footprint and cost. This kit helps evaluate device functionality and develop applications quickly for faster time-to-market.
 
-* 40-QFN CYW20719 dual-mode (BLE/BR/EDR) Bluetooth 5.0-compliant wireless MCU
+* 40-QFN CYW20719 dual-mode (LE/BR/EDR) Bluetooth 5.1-compliant wireless MCU
 * Arduino compatible headers for hardware expansion
 * On-board sensors - a 9-axis motion sensor (3D digital linear acceleration sensor, 3D digital angular rate sensor, and 3D digital magnetic sensor) and a thermistor
 * User switches and LEDs
